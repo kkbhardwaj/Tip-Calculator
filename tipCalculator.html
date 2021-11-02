@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Title of the Page -->
+    <title> Tip Calculator </title> 
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css"> 
+  </head>
+  <body>
+    <!-- Input UI -->
+    <div class="inputColumn">
+      <h2>Bill</h2>
+      <input type="number" id="billID"> <br>
+      <h3>Tip %</h3>
+      <button onclick="tipDecrement()">-</button>
+      <input type=number min=0 max=100 id="tipID">
+      <button onclick="tipIncrement()">+</button>
+      <h3>Number of people</h3> 
+      <button onclick="peopleDecrement()">-</button>
+      <input  type=number min=1 max=9999 id="peopleID">
+      <button onclick="peopleIncrement()">+</button><br><br>
+      <!-- Call calculateTipAndTotal function by clicking the Calculate Button -->
+      <input type="button" id="button" onclick="calBillObj.calculateTipAndTotal.call(calBillObj)" value="Calculate">
+    </div>
+    <!-- Output UI -->
+    <div class="outputColumn">
+      <table>
+        <tr>
+          <td>
+            <div> 
+              <h1> Tip </h1>
+              <h3> Per people </h3>
+            </div>
+          </td>
+          <td >
+            <div id="tipOutputID">
+              <!-- Display Tip per people after calculateTipAndTotal funcion call-->
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td> 
+            <div> 
+              <h1> Total </h1>
+              <h3> Per people </h3>
+            </div>
+          </td>
+          <td>
+            <div id="peopleOutputID">
+              <!-- Display Total per people after calculateTipAndTotal function call-->
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <!-- External Javascript -->
+    <script src="index.js"> </script>
+  </body>
+</html>

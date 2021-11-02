@@ -1,0 +1,44 @@
+/* Set Body Margin */
+body {
+  margin-top: 80px;
+}
+
+/* Set Input UI */
+.inputColumn {
+  float: left;
+  width: 22%;
+  height: 350px;
+  margin-left: 370px;
+  padding-left: 40px;
+  margin-top: 30px;
+  box-shadow: 0 10px 20px -8px #000;
+}
+
+/* Set Output UI */
+.outputColumn {
+  float: left;
+  width: 40%;
+  margin-right: 20px;
+  height: 350px;
+  padding-left: 40px;
+  margin-top: 30px;
+  box-shadow: 0 10px 20px -8px #000;
+}
+
+/* Set Calculate Button */
+#button {
+  background: white;
+  color: black;
+  border: groove;
+  border-bottom: solid 2px #222;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 10px 20px;
+  width: 50%;
+}
+
+/* Set Calculate Button Hover */
+#button:hover {
+  background: grey;
+  border-bottom-color: #111;
+}
