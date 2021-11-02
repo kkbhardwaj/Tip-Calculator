@@ -21,9 +21,9 @@ class calculateBill{
     
     try { // Exception Handling
       //Check if Bill, Tip % and Number of people values are Valid or not
-      if((inputBillAmount-inputBillAmount)!=0) throw "Please Enter a valid Amount in Bill"
-      if((inputTipAmount-inputTipAmount)!=0) throw "Please Enter a valid value in Tip %"
-      if((inputNoOfPeople-inputNoOfPeople)!=0) throw "Please Enter a valid value in No. of people"
+      if((inputBillAmount-inputBillAmount)!=0) throw "Please Enter a valid Amount in Bill";
+      if((inputTipAmount-inputTipAmount)!=0) throw "Please Enter a valid value in Tip %";
+      if((inputNoOfPeople-inputNoOfPeople)!=0) throw "Please Enter a valid value in No. of people";
       //Check if Bill amount is less than 1
       if(inputBillAmount<=0) throw "Bill Amount cannot be zero or less than zero";
       //Check if Tip % is less than 0 or Greater than 100
